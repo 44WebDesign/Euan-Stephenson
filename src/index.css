@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #bd0f0f;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #120808;
+  --font-display: "Lexend", sans-serif;
+  --font-sans: "Lexend", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-background-dark text-slate-100 antialiased;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
