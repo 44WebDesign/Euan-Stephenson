@@ -7,13 +7,16 @@ import itcLogo from '../assets/partners/itc.jpg';
 import platinumLogo from '../assets/partners/platinum.png';
 // @ts-ignore
 import transportLogo from '../assets/partners/transport.png';
+// @ts-ignore
+import webdesignLogo from '../assets/partners/58webdesign.png';
 
 export default function Partners() {
   const partners = [
     { name: "KDR European", logo: kdrLogo },
     { name: "Ipswich Trade Centre", logo: itcLogo },
     { name: "Platinum Sports & Prestige", logo: platinumLogo },
-    { name: "Transport LTD", logo: transportLogo }
+    { name: "Transport LTD", logo: transportLogo },
+    { name: "58 Web Design", logo: webdesignLogo }
   ];
 
   return (
