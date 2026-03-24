@@ -23,7 +23,7 @@ export default function Footer() {
           <a href="https://www.youtube.com/channel/UC36zcFNoVGe_4q2YoDtuB_g" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors p-2 bg-white/5 rounded-full"><Youtube size={18} /></a>
         </div>
 
-        <p className="text-white/60 text-sm font-medium">© 2026 Euan Stephenson. All rights reserved.</p>
+        <p className="text-white/60 text-sm font-medium">© 2026 Euan Stephenson. All rights reserved. Website by <a href="https://58webdesign.co.uk">58WebDesign</a></p>
       </div>
     </motion.footer>
   );
