@@ -46,7 +46,7 @@ export default function Timeline() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative z-10 flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-0 pl-12 md:pl-0"
+            className="relative z-10 flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-24 pl-12 md:pl-0"
           >
             <div className="md:w-[45%] text-left hidden md:block">
               <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">Next Step</span>
@@ -100,7 +100,7 @@ export default function Timeline() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative z-10 flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-0 pl-12 md:pl-0"
+            className="relative z-10 flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-24 pl-12 md:pl-0"
           >
             <div className="md:w-[45%] text-left hidden md:block">
               <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">IPKC</span>
