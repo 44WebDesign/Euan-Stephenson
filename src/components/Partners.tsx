@@ -11,12 +11,12 @@ import transportLogo from '../assets/partners/transport.png';
 import webdesignLogo from '../assets/partners/58webdesign.png';
 
 export default function Partners() {
-  const featuredPartner = { name: "KDR European", logo: kdrLogo };
+  const featuredPartner = { name: "Transport LTD", logo: transportLogo }{ name: "KDR European", logo: kdrLogo };
   
   const otherPartners = [
+    { name: "KDR European", logo: kdrLogo },
     { name: "Ipswich Trade Centre", logo: itcLogo },
     { name: "Platinum Sports & Prestige", logo: platinumLogo },
-    { name: "Transport LTD", logo: transportLogo },
     { name: "58 Web Design", logo: webdesignLogo }
   ];
 
