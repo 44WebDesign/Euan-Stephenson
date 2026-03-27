@@ -1,7 +1,5 @@
-import { motion } from 'framer-motion'; // Changed from 'motion/react' to the standard 'framer-motion'
-// @ts-ignore
-import martelloLogo from '../assets/partners/martello.jpg'; 
-// @ts-ignore
+import { motion } from 'motion/react';
+// @ts-ignore - Vite will resolve these images
 import kdrLogo from '../assets/partners/kdr.jpg';
 // @ts-ignore
 import itcLogo from '../assets/partners/itc.jpg';
@@ -9,14 +7,17 @@ import itcLogo from '../assets/partners/itc.jpg';
 import platinumLogo from '../assets/partners/platinum.png';
 // @ts-ignore
 import transportLogo from '../assets/partners/transport.png';
-// Note: removed webdesignLogo to keep it to 4 small + 1 big
+// @ts-ignore
+import webdesignLogo from '../assets/partners/58webdesign.png';
 
 export default function Partners() {
+  const featuredPartner = { name: "KDR European", logo: kdrLogo };
+  
   const otherPartners = [
-    { name: "KDR European", logo: kdrLogo },
     { name: "Ipswich Trade Centre", logo: itcLogo },
     { name: "Platinum Sports & Prestige", logo: platinumLogo },
-    { name: "Transport LTD", logo: transportLogo }
+    { name: "Transport LTD", logo: transportLogo },
+    { name: "58 Web Design", logo: webdesignLogo }
   ];
 
   return (
@@ -33,29 +34,30 @@ export default function Partners() {
         <div className="h-1 w-20 bg-primary mx-auto mt-4"></div>
       </motion.div>
 
+      {/* Main Layout Container */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         
-        {/* Featured Partner: Martello */}
+        {/* Featured Partner: KDR (Left Side) */}
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="lg:col-span-6 flex"
+          transition={{ duration: 0.6 }}
+          className="lg:col-span-5 group relative"
         >
-          <div className="w-full bg-white/5 border-2 border-primary/20 hover:border-primary/60 rounded-3xl p-2 flex justify-center items-center group transition-all duration-500 hover:shadow-[0_0_40px_rgba(189,15,15,0.15)] overflow-hidden">
-            <div className="w-full h-full min-h-[350px] md:min-h-[450px] relative flex items-center justify-center p-12 bg-white rounded-[1.25rem] shadow-inner transition-transform duration-700 group-hover:scale-[1.01]">
+          <div className="h-full min-h-[320px] bg-white/5 border-2 border-primary/30 hover:border-primary rounded-3xl p-8 flex flex-col justify-center items-center transition-all duration-500 hover:shadow-[0_0_30px_rgba(189,15,15,0.3)] bg-gradient-to-br from-white/10 to-transparent">
+            <div className="w-full h-full relative flex items-center justify-center p-8 bg-white rounded-2xl overflow-hidden shadow-2xl group-hover:scale-[1.02] transition-transform duration-500">
               <img
-                src={martelloLogo}
-                alt="Martello"
+                src={featuredPartner.logo}
+                alt={`${featuredPartner.name} Logo`}
                 className="max-w-full max-h-full object-contain"
               />
             </div>
           </div>
         </motion.div>
 
-        {/* Small Partners Grid (2x2) */}
-        <div className="lg:col-span-6 grid grid-cols-2 gap-4">
+        {/* Other Partners: 2x2 Grid (Right Side) */}
+        <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {otherPartners.map((partner, index) => (
             <motion.div
               key={partner.name}
@@ -63,20 +65,19 @@ export default function Partners() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group relative"
+              className="h-40 bg-white/5 border border-white/10 hover:border-white/30 rounded-2xl p-4 flex justify-center items-center group cursor-pointer transition-all duration-300"
             >
-              <div className="h-full min-h-[170px] md:min-h-[215px] bg-white/5 border border-white/10 hover:border-primary/40 rounded-2xl p-2 flex justify-center items-center transition-all duration-300">
-                <div className="w-full h-full relative flex items-center justify-center p-6 bg-white/90 rounded-xl overflow-hidden group-hover:bg-white transition-all duration-300">
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
+              <div className="w-full h-full relative flex items-center justify-center p-4 bg-white/80 rounded-xl overflow-hidden group-hover:bg-white transition-colors duration-300">
+                <img
+                  src={partner.logo}
+                  alt={`${partner.name} Logo`}
+                  className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
+                />
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
