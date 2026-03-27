@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion'; // Changed from 'motion/react' to the standard 'framer-motion'
 // @ts-ignore
-import martelloLogo from '../assets/partners/martello.jpg'; // Ensure this path is correct
+import martelloLogo from '../assets/partners/martello.jpg'; 
 // @ts-ignore
 import kdrLogo from '../assets/partners/kdr.jpg';
 // @ts-ignore
@@ -9,6 +9,7 @@ import itcLogo from '../assets/partners/itc.jpg';
 import platinumLogo from '../assets/partners/platinum.png';
 // @ts-ignore
 import transportLogo from '../assets/partners/transport.png';
+// Note: removed webdesignLogo to keep it to 4 small + 1 big
 
 export default function Partners() {
   const otherPartners = [
@@ -46,14 +47,14 @@ export default function Partners() {
             <div className="w-full h-full min-h-[350px] md:min-h-[450px] relative flex items-center justify-center p-12 bg-white rounded-[1.25rem] shadow-inner transition-transform duration-700 group-hover:scale-[1.01]">
               <img
                 src={martelloLogo}
-                alt="Martello Logo"
+                alt="Martello"
                 className="max-w-full max-h-full object-contain"
               />
             </div>
           </div>
         </motion.div>
 
-        {/* The Other 4 Partners */}
+        {/* Small Partners Grid (2x2) */}
         <div className="lg:col-span-6 grid grid-cols-2 gap-4">
           {otherPartners.map((partner, index) => (
             <motion.div
@@ -68,15 +69,14 @@ export default function Partners() {
                 <div className="w-full h-full relative flex items-center justify-center p-6 bg-white/90 rounded-xl overflow-hidden group-hover:bg-white transition-all duration-300">
                   <img
                     src={partner.logo}
-                    alt={`${partner.name} Logo`}
-                    className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
