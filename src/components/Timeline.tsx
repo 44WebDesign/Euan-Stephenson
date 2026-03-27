@@ -24,7 +24,7 @@ export default function Timeline() {
             <div className="md:w-[45%] text-left md:text-right hidden md:block">
               <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">The Beginning</span>
               <h4 className="text-2xl font-bold mt-2">The First Spark</h4>
-              <p className="text-white/80 mt-3">Started Karting at local club level, immediately showing natural pace.</p>
+              <p className="text-white/80 mt-3">Started Karting at 8 years old at Anglia Indoor Karting.</p>
             </div>
 
             <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-10 md:size-14 rounded-full bg-primary flex items-center justify-center text-white ring-8 ring-background-dark">
@@ -36,7 +36,7 @@ export default function Timeline() {
               <div className="md:hidden mt-2">
                 <span className="text-xs font-black text-primary uppercase tracking-[0.2em] block mb-1">The Beginning</span>
                 <h4 className="text-2xl font-bold">The First Spark</h4>
-                <p className="text-white/80 mt-2">Started Karting at local club level.</p>
+                <p className="text-white/80 mt-2">Started Karting at 8 years old at Anglia Indoor Karting.</p>
               </div>
             </div>
           </motion.div>
@@ -49,9 +49,9 @@ export default function Timeline() {
             className="relative z-10 flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-0 pl-12 md:pl-0"
           >
             <div className="md:w-[45%] text-left hidden md:block">
-              <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">Achievement</span>
-              <h4 className="text-2xl font-bold mt-2">Regional Champion</h4>
-              <p className="text-white/80 mt-3">Secured the championship with 5 consecutive wins.</p>
+              <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">Next Step</span>
+              <h4 className="text-2xl font-bold mt-2">Junior Rookies</h4>
+              <p className="text-white/80 mt-3">Elloguh Park racing Junior Rookies. Finished 3rd overall in 2021.</p>
             </div>
 
             <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-10 md:size-14 rounded-full bg-primary flex items-center justify-center text-white ring-8 ring-background-dark">
@@ -59,11 +59,11 @@ export default function Timeline() {
             </div>
 
             <div className="md:w-[45%] text-left md:text-right mt-0 md:mt-0">
-              <span className="text-4xl font-black text-primary/30">2020</span>
+              <span className="text-4xl font-black text-primary/30">2019</span>
               <div className="md:hidden mt-2 text-left">
-                <span className="text-xs font-black text-primary uppercase tracking-[0.2em] block mb-1">Achievement</span>
-                <h4 className="text-2xl font-bold">Regional Champion</h4>
-                <p className="text-white/80 mt-2">First major title win.</p>
+                <span className="text-xs font-black text-primary uppercase tracking-[0.2em] block mb-1">Next Step</span>
+                <h4 className="text-2xl font-bold">Junior Rookies</h4>
+                <p className="text-white/80 mt-2">Elloguh Park racing Junior Rookies. Finished 3rd overall in 2021.</p>
               </div>
             </div>
           </motion.div>
