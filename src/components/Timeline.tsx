@@ -103,7 +103,7 @@ export default function Timeline() {
             className="relative z-10 flex flex-col md:flex-row-reverse items-start md:items-center justify-between mb-0 pl-12 md:pl-0"
           >
             <div className="md:w-[45%] text-left hidden md:block">
-              <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">IPKC/span>
+              <span className="text-sm font-black text-primary uppercase tracking-[0.2em]">IPKC</span>
               <h4 className="text-2xl font-bold mt-2">& Club 2000</h4>
               <p className="text-white/80 mt-3">Privateer Kart Championship & Club 2000 at Newmarket.</p>
             </div>
@@ -115,7 +115,7 @@ export default function Timeline() {
             <div className="md:w-[45%] text-left md:text-right mt-0 md:mt-0">
               <span className="text-4xl font-black text-primary/30">2024</span>
               <div className="md:hidden mt-2 text-left">
-                <span className="text-xs font-black text-primary uppercase tracking-[0.2em] block mb-1">Next StepIPKC</span>
+                <span className="text-xs font-black text-primary uppercase tracking-[0.2em] block mb-1">IPKC</span>
                 <h4 className="text-2xl font-bold">& Club 2000</h4>
                 <p className="text-white/80 mt-2">Privateer Kart Championship & Club 2000 at Newmarket.</p>
               </div>
