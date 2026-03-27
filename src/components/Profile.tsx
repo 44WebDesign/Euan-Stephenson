@@ -42,8 +42,10 @@ export default function Profile() {
           </div>
 
           <p className="text-white/80 text-lg leading-relaxed">
-            At just 14 years old, Euan Stephenson has already demonstrated a level of precision and tactical awareness that rivals veteran drivers. His journey isn't just about speed; it's about the discipline of the line and the hunger for the podium.
+            At just 16 years old, Euan Stephenson has already demonstrated a level of precision and tactical awareness that rivals veteran drivers. His journey isn't just about speed; it's about the discipline of the line and the hunger for the podium. 
           </p>
+              <p className="text-white/80 text-lg leading-relaxed">
+            2026 is Euan's first year in Senior Rotax and is relishing the challenge of fighting for wins. As well as this, Euan is currently completing an Apprenticeship in Carpentry and Sea Cadets as a Level 2 RYA Safety Boat Operator.
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
             <div className="bg-white/5 border border-white/10 p-6 rounded-2xl flex items-center gap-5 hover:border-primary/60 transition-colors group">
