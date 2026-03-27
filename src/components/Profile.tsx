@@ -46,7 +46,7 @@ export default function Profile() {
           </p>
               <p className="text-white/80 text-lg leading-relaxed">
             2026 is Euan's first year in Senior Rotax and is relishing the challenge of fighting for wins. As well as this, Euan is currently completing an Apprenticeship in Carpentry and Sea Cadets as a Level 2 RYA Safety Boat Operator.
-
+ </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
             <div className="bg-white/5 border border-white/10 p-6 rounded-2xl flex items-center gap-5 hover:border-primary/60 transition-colors group">
               <div className="bg-primary/10 p-3 rounded-xl">
