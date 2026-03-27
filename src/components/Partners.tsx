@@ -46,7 +46,7 @@ export default function Partners() {
           className="lg:col-span-5 group relative"
         >
           <div className="h-full min-h-[320px] bg-white/5 border-2 border-primary/30 hover:border-primary rounded-3xl p-8 flex flex-col justify-center items-center transition-all duration-500 hover:shadow-[0_0_30px_rgba(189,15,15,0.3)] bg-gradient-to-br from-white/10 to-transparent">
-            <div className="w-full h-full relative flex items-center justify-center p-8 bg-white rounded-2xl overflow-hidden shadow-2xl group-hover:scale-[1.02] transition-transform duration-500">
+            <div className="w-full h-full relative flex items-center justify-center p-8 bg-white/80 rounded-2xl overflow-hidden shadow-2xl group-hover:scale-[1.02] transition-transform duration-500">
               <img
                 src={featuredPartner.logo}
                 alt={`${featuredPartner.name} Logo`}
@@ -67,7 +67,7 @@ export default function Partners() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="h-40 bg-white/5 border border-white/10 hover:border-white/30 rounded-2xl p-4 flex justify-center items-center group cursor-pointer transition-all duration-300"
             >
-              <div className="w-full h-full relative flex items-center justify-center p-4 bg-white/80 rounded-xl overflow-hidden group-hover:bg-white transition-colors duration-300">
+              <div className="w-full h-full relative flex items-center justify-center p-4 bg-white rounded-xl overflow-hidden group-hover:bg-white transition-colors duration-300">
                 <img
                   src={partner.logo}
                   alt={`${partner.name} Logo`}
